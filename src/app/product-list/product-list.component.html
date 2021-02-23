@@ -1,8 +1,16 @@
-<app-top-bar></app-top-bar>
-
-<div class="container">
-  <router-outlet></router-outlet>
+<h2>Products</h2>
+<div *ngFor="let product of products">
+<h3>
+  {{product.name}}
+</h3>
+<h5>
+  {{product.description}}
+</h5>
+<h6 class="price">
+  {{product.price}}
+</h6>
 </div>
+
 
 <!--
 Copyright Google LLC. All Rights Reserved.
